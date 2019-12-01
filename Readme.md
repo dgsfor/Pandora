@@ -11,6 +11,11 @@
 gunicorn NoticeSystem:app -c gunicorn.conf
 ```
 
+### 容器
+```bash
+docker build -t pandora:dev-1.1.1-1 .
+```
+
 ### 坑
 * flask获取header的参数不能使用下划线，只能使用中划线，不支持语法糖
 
